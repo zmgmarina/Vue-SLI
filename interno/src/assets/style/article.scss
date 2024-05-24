@@ -1,0 +1,123 @@
+.content {
+    display: flex;
+    flex-direction: row;
+    gap: 52px;
+    margin-top: 200px;
+  }
+
+.section-news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+  
+    &__post {
+      padding-bottom: 35px;
+    }
+  
+    &__title-news {
+      color: #292f36;
+      font-family: "DM Serif Display", sans-serif;
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.25;
+      width: 684px;
+      margin-bottom: 21px;
+    }
+  
+    &__image-post {
+      width: 799px;
+      height: 539px;
+      border-radius: 10%;
+    }
+  
+    &__date-link {
+      display: flex;
+      flex-direction: row;
+      gap: 409px;
+      margin-top: 46px;
+    }
+  
+    &__date {
+      font-family: "Jost", sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.5;
+      letter-spacing: 0.01em;
+      text-transform: capitalize;
+      color: #4d5053;
+    }
+  
+    &__breadcrumbs {
+      margin: 0;
+      padding: 0;
+    }
+  
+    &__breadcrumbs-item {
+      display: inline-block;
+      align-items: center;
+  
+      &:not(:last-child)::after {
+        content: "/";
+        margin-left: 8px;
+        margin-right: 8px;
+      }
+    }
+  
+    &__breadcrumbs-link {
+      color: #4d5053;
+      font-family: "Jost", sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.5;
+      letter-spacing: 0.22px;
+      transition: all 1s ease;
+  
+      &:hover {
+        color: #cda274;
+        transition: all 0.5s ease;
+      }
+      &:active {
+        color: #4d5053;
+        transition: all 1s ease;
+      }
+    }
+  
+    &__text {
+      font-weight: 400;
+      font-size: 22px;
+      font-family: "Jost";
+      letter-spacing: 0.01em;
+      color: #4d5053;
+      width: 804px;
+      margin-top: 48px;
+    }
+  }
+  .section-quotes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 50px;
+    width: 799px;
+    height: 267px;
+    background: #f4f0ec;
+    margin-top: 35px;
+    margin-bottom: 27px;
+  
+    &__quotes {
+      font-family: "DM Serif Display";
+      font-style: italic;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 1.25;
+      letter-spacing: 0.02em;
+      text-align: center;
+      color: #cda274;
+      width: 370px;
+    }
+  }
