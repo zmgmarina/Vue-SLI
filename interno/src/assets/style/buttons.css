@@ -1,0 +1,40 @@
+.tags__title {
+  font-family: "DM Serif Display";
+  font-style: sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #292f36;
+  margin-bottom: 24px;
+}
+.tags__buttons-tags {
+  width: 335px;
+  height: 145px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px;
+}
+.tags__button-tags {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  border-radius: 10px;
+  border: none;
+  padding: 9px 30px;
+  background: #f4f0ec;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.25;
+  font-family: "Jost";
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #292f36;
+}
+.tags__button-tags:hover {
+  background: #292f36;
+  color: #fff;
+  transition: all 0.5s ease;
+}/*# sourceMappingURL=buttons.css.map */
