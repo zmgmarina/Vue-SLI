@@ -27,5 +27,5 @@
 .pagination-item:hover {
   background-color: #f4f0ec;
   border: none;
-  transition: all 2s ease;
+  transition: all 0.5s ease;
 }/*# sourceMappingURL=pagination.css.map */

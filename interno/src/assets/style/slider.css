@@ -1,0 +1,23 @@
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  width: 300%;
+}
+
+.slider img {
+  width: 100%;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.controls button {
+  margin: 0 10px;
+}/*# sourceMappingURL=slider.css.map */

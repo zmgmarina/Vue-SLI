@@ -1,0 +1,80 @@
+.footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 185px;
+  width: 1199px;
+  height: 272px;
+  margin-bottom: 134px;
+  padding-top: 200px;
+}
+.footer__logo-brand {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+.footer__name-brand {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: #292f36;
+  margin-bottom: 18px;
+}
+.footer__text {
+  font-weight: 400;
+  font-size: 22px;
+  font-family: "Jost";
+  letter-spacing: 0.01em;
+  color: #4d5053;
+  width: 393px;
+  margin-bottom: 31px;
+}
+.footer__in {
+  font-weight: 400;
+  font-size: 18px;
+  font-family: "DM Serif Display";
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #292f36;
+}
+.footer__socialNetwork-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 54px;
+  width: 225px;
+  height: 22px;
+}
+.footer__page {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 26px;
+  width: 125px;
+  height: 238px;
+}
+.footer__title-pages, .footer__title-contact {
+  font-weight: 400;
+  font-size: 25px;
+  font-family: "DM Serif Display";
+  color: #292f36;
+}
+.footer__page-link, .footer__contacts {
+  font-weight: 400;
+  font-size: 22px;
+  font-family: "Jost";
+  letter-spacing: 0.01em;
+  color: #4d5053;
+}
+.footer__contacts {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 26px;
+  width: 258px;
+  height: 272px;
+}/*# sourceMappingURL=footer.css.map */

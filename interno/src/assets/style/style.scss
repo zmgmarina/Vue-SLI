@@ -248,8 +248,7 @@ body {
 }
 
 .section-news {
-  padding-bottom: 96px;
-
+  
   &__heading {
     display: flex;
     align-items: center;
@@ -355,91 +354,3 @@ body {
   }
 }
 
-.footer {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: row;
-  gap: 185px;
-  width: 1199px;
-  height: 272px;
-  padding-bottom: 134px;
-
-  &__logo-brand {
-    display: flex;
-    align-items: baseline;
-    gap: 8px;
-  }
-  &__name-brand {
-    font-family: "DM Serif Display", serif;
-    font-weight: 400;
-    font-size: 40px;
-    color: #292f36;
-    margin-bottom: 18px;
-  }
-  &__text {
-    font-weight: 400;
-    font-size: 22px;
-    font-family: "Jost";
-    letter-spacing: 0.01em;
-    color: #4d5053;
-    width: 393px;
-    margin-bottom: 31px;
-  }
-
-  &__in {
-    font-weight: 400;
-    font-size: 18px;
-    font-family: "DM Serif Display";
-    letter-spacing: 0.06em;
-    text-align: center;
-    color: #292f36;
-  }
-
-  &__socialNetwork-link {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: row;
-    gap: 54px;
-    width: 225px;
-    height: 22px;
-  }
-
-  &__page {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 26px;
-    width: 125px;
-    height: 238px;
-  }
-
-  &__title-pages,
-  &__title-contact {
-    font-weight: 400;
-    font-size: 25px;
-    font-family: "DM Serif Display";
-    color: #292f36;
-  }
-
-  &__page-link,
-  &__contacts {
-    font-weight: 400;
-    font-size: 22px;
-    font-family: "Jost";
-    letter-spacing: 0.01em;
-    color: #4d5053;
-  }
-
-  &__contacts {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 26px;
-    width: 258px;
-    height: 272px;
-  }
-}

@@ -1,45 +1,34 @@
 <template>
-  <HeaderComponent/>
-  <BannerComponent/>
-  <ArticleComponent/>
-  <FooterComponent/>
-  <ProjectComponent/>
-  <CategoryComponent/>
-  <PaginationComponent/>
- 
-
-
-
-
+  <HeaderComponent />
+  <BannerComponent />
+  <ArticleComponent />
+  <CategoryComponent />
+  <PaginationComponent />
+  <DetailsComponent />
+  <FooterComponent />
 </template>
 
 <script>
-import HeaderComponent from './components/HeaderComponent.vue';
-import BannerComponent from './components/BannerComponent.vue';
-import ArticleComponent from './components/ArticleComponent.vue';
-import FooterComponent from './components/FooterComponent.vue';
-import ProjectComponent from './components/ProjectComponent.vue';
-import CategoryComponent from './components/CategoryComponent.vue';
-import PaginationComponent from './components/PaginationComponent.vue';
-
+import HeaderComponent from "./components/HeaderComponent.vue";
+import BannerComponent from "./components/BannerComponent.vue";
+import ArticleComponent from "./components/ArticleComponent.vue";
+import CategoryComponent from "./components/CategoryComponent.vue";
+import PaginationComponent from "./components/PaginationComponent.vue";
+import DetailsComponent from "./components/DetailsComponent.vue";
+import FooterComponent from "./components/FooterComponent.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     HeaderComponent,
     BannerComponent,
     ArticleComponent,
-    FooterComponent,
-    ProjectComponent,
     CategoryComponent,
     PaginationComponent,
-    
-    
-  }
-}
+    DetailsComponent,
+    FooterComponent,
+  },
+};
 </script>
 
-
-<style lang="scss">
-
-</style>
+<style lang="scss"></style>

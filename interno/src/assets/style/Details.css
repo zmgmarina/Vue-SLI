@@ -1,0 +1,39 @@
+.project-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.project-details__banner {
+  margin-bottom: 200px;
+}
+.project-details__banner-image {
+  background-image: url("../image/ImagesBanner.png");
+  background-size: cover;
+  height: 356px;
+}
+.project-details__text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  max-width: 658px;
+  margin-bottom: 100px;
+}
+.project-details__title {
+  color: #292f36;
+  font-family: "DM Serif Display", sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25;
+}
+.project-details__text {
+  font-family: "Jost", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #4d5053;
+}/*# sourceMappingURL=Details.css.map */
