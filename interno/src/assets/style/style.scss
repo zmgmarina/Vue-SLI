@@ -61,6 +61,11 @@ body {
     text-align: center;
     color: #292f36;
   }
+
+  &__menu-link:hover {
+  color: #cda274;
+  transition: all 0.5s ease;
+  }
 }
 
 .banner {
@@ -247,7 +252,7 @@ body {
   }
 }
 
-.section-news {
+.box-news {
   
   &__heading {
     display: flex;

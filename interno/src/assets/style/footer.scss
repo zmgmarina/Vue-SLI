@@ -49,23 +49,22 @@
       width: 225px;
       height: 22px;
     }
-  
-    &__page {
-      display: flex;
-      align-items: flex-start;
-      justify-content: flex-start;
-      flex-direction: column;
-      gap: 26px;
-      width: 125px;
-      height: 238px;
-    }
-  
+    
     &__title-pages,
     &__title-contact {
       font-weight: 400;
       font-size: 25px;
       font-family: "DM Serif Display";
       color: #292f36;
+    }
+
+    &__nav {
+      margin-top: 26px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      gap: 26px;
     }
   
     &__page-link,
@@ -75,6 +74,10 @@
       font-family: "Jost";
       letter-spacing: 0.01em;
       color: #4d5053;
+      &:hover {
+        color: #cda274;
+        transition: all 0.5s ease;
+      }
     }
   
     &__contacts {

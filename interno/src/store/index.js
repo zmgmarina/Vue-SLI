@@ -2,29 +2,369 @@ import { createStore } from "vuex";
 
 export default createStore({
   state: {
-    data: [{
-        title: 'Minimal Look Bedrooms',
-        paragraphOne: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo.',
-        paragraphTwo: 'In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamus ipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim, gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitae iaculisvd porta. Proin tincidunt ligula id purus porttitor.'
-    }],
-    
+    data: [
+      {
+        title: "Minimal Look Bedrooms",
+        paragraphOne:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo.",
+        paragraphTwo:
+          "In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamus ipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim, gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitae iaculisvd porta. Proin tincidunt ligula id purus porttitor.",
+      },
+    ],
+
     slidImages: [
-        { image: require('@/assets/image/sliderImg.png'), alt: 'slider image'},
-        { image: require('@/assets/image/sliderImg2.png'), alt: 'slider image'},
-        { image: require('@/assets/image/sliderImg.png'), alt: 'slider image'},
-      ]
-       
+      { image: require("@/assets/image/sliderImg.png"), alt: "slider image" },
+      { image: require("@/assets/image/sliderImg2.png"), alt: "slider image" },
+      { image: require("@/assets/image/sliderImg.png"), alt: "slider image" },
+    ],
+
+    links: [
+      {
+        id: 1,
+        title: "Home",
+        url: "./",
+      },
+      {
+        id: 2,
+        title: "Project",
+        url: "/project",
+      },
+      {
+        id: 3,
+        title: "Blog",
+        url: "/blog",
+      },
+    ],
+    buttons: [
+      {
+        id: "Bathroom",
+        title: "Bathroom",
+      },
+      {
+        id: "Bad Room",
+        title: "Bad Room",
+      },
+      {
+        id: "Kitchan",
+        title: "Kitchan",
+      },
+      {
+        id: "Living Area",
+        title: "Living Area",
+      },
+    ],
+    currentProjects: [
+      {
+        id: "Bathroom",
+        title: "Minimal Bethroom",
+        image: require("@/assets/image/bathroom1.jpg"),
+        alt: "photo",
+        link1: "Decore",
+        link2: "Artchitecture",
+      },
+      {
+        id: "Bathroom",
+        title: "Classic Minimal Bethroom",
+        image: require("@/assets/image/bathroom2.jpg"),
+        alt: "photo",
+        link1: "Decore",
+        link2: "Artchitecture",
+      },
+      {
+        id: "Bathroom",
+        title: "Modern Bethroom",
+        image: require("@/assets/image/bathroom3.jpg"),
+        alt: "photo",
+        link1: "Decore",
+        link2: "Artchitecture",
+      },
+      {
+        id: "Bathroom",
+        title: "Minimal Bethroom",
+        image: require("@/assets/image/bathroom4.jpg"),
+        alt: "photo",
+        link1: "Decore",
+        link2: "Artchitecture",
+      },
+      {
+        id: "Bathroom",
+        title: "Minimal Bethroom",
+        image: require("@/assets/image/bathroom1.jpg"),
+        alt: "photo",
+        link1: "Decore",
+        link2: "Artchitecture",
+      },
+      {
+        id: "Bathroom",
+        title: "Modern Bethroom",
+        image: require("@/assets/image/bathroom3.jpg"),
+        alt: "photo",
+        link1: "Decore",
+        link2: "Artchitecture",
+      },
+      {
+        id: "Bathroom",
+        title: "Classic Minimal Bethroom",
+        image: require("@/assets/image/bathroom2.jpg"),
+        alt: "photo",
+        link1: "Decore",
+        link2: "Artchitecture",
+      },
+    ],
+
+    projects: [
+      {
+        id: "Bathroom",
+        title: "Minimal Bethroom",
+        image: require("@/assets/image/bathroom1.jpg"),
+        alt: "photo",
+        link1: "Decore",
+        link2: "Artchitecture",
+      },
+      {
+        id: "Bathroom",
+        title: "Classic Minimal Bethroom",
+        image: require("@/assets/image/bathroom2.jpg"),
+        alt: "photo",
+        link1: "Decore",
+        link2: "Artchitecture",
+      },
+      {
+        id: "Bathroom",
+        title: "Modern Bethroom",
+        image: require("@/assets/image/bathroom3.jpg"),
+        alt: "photo",
+        link1: "Decore",
+        link2: "Artchitecture",
+      },
+      {
+        id: "Bathroom",
+        title: "Minimal Bethroom",
+        image: require("@/assets/image/bathroom4.jpg"),
+        alt: "photo",
+        link1: "Decore",
+        link2: "Artchitecture",
+      },
+      {
+        id: "Bathroom",
+        title: "Minimal Bethroom",
+        image: require("@/assets/image/bathroom1.jpg"),
+        alt: "photo",
+        link1: "Decore",
+        link2: "Artchitecture",
+      },
+      {
+        id: "Bathroom",
+        title: "Modern Bethroom",
+        image: require("@/assets/image/bathroom3.jpg"),
+        alt: "photo",
+        link1: "Decore",
+        link2: "Artchitecture",
+      },
+      {
+        id: "Bathroom",
+        title: "Classic Minimal Bethroom",
+        image: require("@/assets/image/bathroom2.jpg"),
+        alt: "photo",
+        link1: "Decore",
+        link2: "Artchitecture",
+      },
+      {
+        id: "Bad Room",
+        title: "Minimal Bad Room",
+        image: require("@/assets/image/bathroom5.jpeg"),
+        alt: "photo",
+        link1: "Decore",
+        link2: "Artchitecture",
+      },
+      {
+        id: "Bad Room",
+        title: "Classic Minimal Bad Room",
+        image: require("@/assets/image/bathroom2.jpg"),
+        alt: "photo",
+        link1: "Decore",
+        link2: "Artchitecture",
+      },
+      {
+        id: "Bad Room",
+        title: "Minimal Bad Room",
+        image: require("@/assets/image/bathroom1.jpg"),
+        alt: "photo",
+        link1: "Decore",
+        link2: "Artchitecture",
+      },
+      {
+        id: "Bad Room",
+        title: "Modern Bad Room",
+        image: require("@/assets/image/bathroom3.jpg"),
+        alt: "photo",
+        link1: "Decore",
+        link2: "Artchitecture",
+      },
+
+      {
+        id: "Bad Room",
+        title: "Minimal Bad Room",
+        image: require("@/assets/image/bathroom1.jpg"),
+        alt: "photo",
+        link1: "Decore",
+        link2: "Artchitecture",
+      },
+      {
+        id: "Bad Room",
+        title: "Classic Minimal Bad Room",
+        image: require("@/assets/image/bathroom2.jpg"),
+        alt: "photo",
+        link1: "Decore",
+        link2: "Artchitecture",
+      },
+      {
+        id: "Bad Room",
+        title: "Modern Bad Room",
+        image: require("@/assets/image/bathroom3.jpg"),
+        alt: "photo",
+        link1: "Decore",
+        link2: "Artchitecture",
+      },
+      {
+        id: "Bad Room",
+        title: "Minimal Bad Room",
+        image: require("@/assets/image/bathroom4.jpg"),
+        alt: "photo",
+        link1: "Decore",
+        link2: "Artchitecture",
+      },
+      {
+        id: "Kitchan",
+        title: "Minimal Kitchan",
+        image: require("@/assets/image/imgProject1.png"),
+        alt: "photo",
+        link1: "Decore",
+        link2: "Artchitecture",
+      },
+      {
+        id: "Kitchan",
+        title: "Classic Minimal Kitchan",
+        image: require("@/assets/image/ImagePost2.png"),
+        alt: "photo",
+        link1: "Decore",
+        link2: "Artchitecture",
+      },
+      {
+        id: "Kitchan",
+        title: "Minimal Kitchan",
+        image: require("@/assets/image/ImagePost1.png"),
+        alt: "photo",
+        link1: "Decore",
+        link2: "Artchitecture",
+      },
+      {
+        id: "Kitchan",
+        title: "Modern Kitchan",
+        image: require("@/assets/image/kithen1.jpg"),
+        alt: "photo",
+        link1: "Decore",
+        link2: "Artchitecture",
+      },
+      {
+        id: "Kitchan",
+        title: "Minimal Kitchan",
+        image: require("@/assets/image/kithen2.jpeg"),
+        alt: "photo",
+        link1: "Decore",
+        link2: "Artchitecture",
+      },
+      {
+        id: "Kitchan",
+        title: "Classic Minimal Kitchan",
+        image: require("@/assets/image/bathroom2.jpg"),
+        alt: "photo",
+        link1: "Decore",
+        link2: "Artchitecture",
+      },
+      {
+        id: "Kitchan",
+        title: "Modern Kitchan",
+        image: require("@/assets/image/bathroom3.jpg"),
+        alt: "photo",
+        link1: "Decore",
+        link2: "Artchitecture",
+      },
+      {
+        id: "Living Area",
+        title: "Classic Minimal Living Area",
+        image: require("@/assets/image/livingArea2.jpg"),
+        alt: "photo",
+        link1: "Decore",
+        link2: "Artchitecture",
+      },
+      {
+        id: "Living Area",
+        title: "Minimal Living Area",
+        image: require("@/assets/image/livingArea3.webp"),
+        alt: "photo",
+        link1: "Decore",
+        link2: "Artchitecture",
+      },
+      {
+        id: "Living Area",
+        title: "Modern Living Area",
+        image: require("@/assets/image/livingArea2.jpg"),
+        alt: "photo",
+        link1: "Decore",
+        link2: "Artchitecture",
+      },
+      {
+        id: "Living Area",
+        title: "Minimal Living Area",
+        image: require("@/assets/image/livingArea5.jpg"),
+        alt: "photo",
+        link1: "Decore",
+        link2: "Artchitecture",
+      },
+      {
+        id: "Living Area",
+        title: "Classic Minimal Living Area",
+        image: require("@/assets/image/bathroom2.jpg"),
+        alt: "photo",
+        link1: "Decore",
+        link2: "Artchitecture",
+      },
+      {
+        id: "Living Area",
+        title: "Modern Living Area",
+        image: require("@/assets/image/bathroom3.jpg"),
+        alt: "photo",
+        link1: "Decore",
+        link2: "Artchitecture",
+      },
+      {
+        id: "Living Area",
+        title: "Minimal Living Area",
+        image: require("@/assets/image/bathroom4.jpg"),
+        alt: "photo",
+        link1: "Decore",
+        link2: "Artchitecture",
+      },
+      {
+        id: "Living Area",
+        title: "Classic Minimal Living Area",
+        image: require("@/assets/image/bathroom2.jpg"),
+        alt: "photo",
+        link1: "Decore",
+        link2: "Artchitecture",
+      },
+    ],
+   
   },
   getters: {
-    
+    getProjects(state) {
+      return state.projects;
+  }
   },
   mutations: {
 
   },
-  actions: {
-  
-  },
-  modules: {
-    
-  },
+  actions: {},
+  modules: {},
 });

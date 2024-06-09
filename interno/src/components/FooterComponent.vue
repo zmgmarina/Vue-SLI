@@ -19,9 +19,15 @@
       </div>
       <div class="footer__page">
         <p class="footer__title-pages">Pages</p>
-        <a class="footer__page-link" href="page.html">Home</a>
-        <a class="footer__page-link" href="#">Project</a>
-        <a class="footer__page-link" href="#">Blog</a>
+        <nav class="footer__nav">
+      <router-link
+        class="footer__page-link"
+        :to="link.url"
+        v-for="link in links"
+        :key="link.id"
+      >{{ link.title }}
+      </router-link>
+    </nav>
       </div>
       <div class="footer__contacts">
         <p class="footer__title-contact">Contact</p>
@@ -34,11 +40,10 @@
 </template>
 
 <script>
-    export default {
-        
-    }
+import { mapState } from "vuex";
+export default {
+  computed: {
+    ...mapState(["links"]),
+  },
+};
 </script>
-
-<style lang="scss" scoped>
-
-</style>
