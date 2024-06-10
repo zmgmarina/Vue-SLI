@@ -1,0 +1,74 @@
+@import "var";
+@import "mixins";
+
+.not-found {
+  &__content {
+    display: grid;
+    grid-template-columns: 569px 913px;
+    align-items: center;
+  }
+
+  &__content_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  &__title {
+    font-family: "DM Serif Display", sans-serif;
+    font-size: 250px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #cda274;
+    height: 285px;
+    margin: 0;
+  }
+
+  &__text {
+    font-family: "DM Serif Display", sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #292f36;
+    letter-spacing: 0.35px;
+    margin: 0;
+    height: 139px;
+  }
+
+  &__link {
+    border-radius: 18px;
+    width: 253px;
+    height: 75px;
+    box-shadow: 0 10px 20px 0 rgba(192, 192, 192, 0.35);
+    background: #292f36;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Jost", sans-serif;
+    letter-spacing: 0.02em;
+    color: #fff;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &:hover,
+        &:focus {
+            color: $mainColorOfSite;
+            background: $firstPrimaryColor;
+            border: 1px solid $firstPrimaryColor;
+            @include transition-slow();
+        }
+  }
+
+  &__vector {
+    padding-left: 8px;
+ 
+  }
+
+  &__image {
+    width: 100%;
+    border-radius: 0 0 0 400px;
+  }
+}

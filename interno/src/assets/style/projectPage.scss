@@ -1,0 +1,73 @@
+.banner-project {
+    margin-bottom: 200px;
+  
+    &__content {
+      background-image: url("../image/PhotoLaceholder.png");
+      background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    }
+
+    &__title-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 503px;
+        padding: 41px 78px;
+        border-radius: 37px 37px 0px 0px;
+        background: #fff;
+        max-width: 503px;
+        margin-top: 178px;
+      }
+    
+      &__heading {
+        color: #292f36;
+        font-family: "DM Serif Display", sans-serif;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.25;
+        margin: 0;
+      }
+
+      &__breadcrumbs {
+        margin: 0;
+        padding: 0;
+      }
+    
+      &__breadcrumbs-item {
+        display: inline-block;
+        align-items: center;
+    
+        &:not(:last-child)::after {
+          content: "/";
+          margin-left: 8px;
+          margin-right: 8px;
+        }
+      }
+    
+      &__breadcrumbs-link {
+        color: #4d5053;
+        font-family: "Jost", sans-serif;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0.22px;
+        transition: all 1s ease;
+    
+        &:hover {
+          color: #cda274;
+          transition: all 0.5s ease;
+        }
+        &:active {
+          color: #4d5053;
+          transition: all 1s ease;
+        }
+       }
+
+    }

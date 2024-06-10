@@ -1,4 +1,23 @@
 <template>
+  <div class="banner-project">
+    <div class="banner-project__content">
+      <div class="banner-project__title-content">
+        <h2 class="banner-project__heading">Articles & News</h2>
+        <div class="banner-project__breadcrumbs">
+          <div class="banner-project__breadcrumbs-item">
+            <router-link class="banner-project__breadcrumbs-link" to="/"
+              >Home</router-link
+            >
+          </div>
+          <div class="banner-project__breadcrumbs-item">
+            <router-link class="banner-project__breadcrumbs-link" to="/blog"
+              >Blog</router-link
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="project-content center">
     <div class="buttons-category">
       <button

@@ -1,15 +1,15 @@
 <template>
    <div class="banner-content center">
-      <div class="banner">
-        <img class="banner__photo" src="../assets/image/banner.jpg" alt="" />
-        <div class="banner__box-started-content">
-          <h1 class="banner__title">Let Your Home Be Unique</h1>
-          <p class="banner__text">
+      <div class="banner-home">
+        <img class="banner-home" src="../assets/image/banner.jpg" alt="" />
+        <div class="banner-home__box-started-content">
+          <h1 class="banner-home__title">Let Your Home Be Unique</h1>
+          <p class="banner-home__text">
             There are many variations of the passages of lorem Ipsum
             fromavailable, majority.
           </p>
-          <div class="banner__button-started">
-            <button class="banner__btn">
+          <div class="banner-home__button-started">
+            <button class="banner-home__btn">
               Get Started
               <img src="../assets/image/Vector.svg" alt="" />
             </button>
@@ -158,8 +158,6 @@
           </div>
         </div>
       </div>
-    
-
     <div class="statistic-box">
       <div class="statistic-box__box-item">
         <p class="statistic-box__number">12</p>
@@ -181,7 +179,6 @@
         <p class="statistic-box__text">Happy CUstomers</p>
       </div>
     </div>
-
     <div class="box-news center">
       <div class="box-news__heading">
         <h2 class="box-news__title">Articles & News</h2>

@@ -12,6 +12,8 @@ import "@/assets/style/footer.scss"
 import "@/assets/style/slider.scss"
 import "@/assets/style/blogStyle.scss"
 import "@/assets/style/blogDetails.scss"
+import "@/assets/style/notFound.scss"
+import "@/assets/style/projectPage.scss"
 
 
 

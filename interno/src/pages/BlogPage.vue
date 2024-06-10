@@ -10,9 +10,7 @@
             >
           </div>
           <div class="banner__breadcrumbs-item">
-            <router-link class="banner__breadcrumbs-link" to="/"
-              >Blog</router-link
-            >
+            <router-link class="banner__breadcrumbs-link" to="/project">Project</router-link>
           </div>
         </div>
       </div>
